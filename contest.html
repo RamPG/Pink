@@ -52,7 +52,108 @@
         </p>
     </section>
 </header>
-
+<main class="contest-main">
+    <h1>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h1>
+    <form class="contest-main__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__user-info">
+            <p>
+                <label class="surname-label" for="surname">Ваша фамилия:</label>
+                <input class="surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
+            </p>
+            <p>
+                <label class="name-label" for="name">Имя:</label>
+                <input class="name" id="name" type="text" name="name" placeholder="Введите ваше имя *">
+            </p>
+            <p>
+                <label class="patronymic-label" for="patronymic">Отчество:</label>
+                <input class="patronymic" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            </p>
+        </div>
+        <div class="form__mobile-filter">
+            <fieldset class="mobile-filter__field">
+                <legend>С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
+                <ul class="mobile_filter__os-list">
+                    <li class="os-list-option">
+                        <input class="filter-input filter-input-checkbox" type="radio"
+                               name="ios" id="ios">
+                        <label for="ios">Pink для iOS</label>
+                    </li>
+                    <li class="os-list-option">
+                        <input class="filter-input filter-input-checkbox" type="radio"
+                               name="android" id="android">
+                        <label for="android">Pink для Android</label>
+                    </li>
+                    <li class="os-list-option">
+                        <input class="filter-input filter-input-checkbox" type="radio"
+                               name="win" id="win">
+                        <label for="win">Windows Phone</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="form__contact-info">
+            <fieldset class="contact-info__field">
+                <p>
+                    <label class="number-label" for="number">Номер телефона:</label>
+                    <input class="number" id="number" type="text" name="surname" placeholder="Номер, пожалуйста">
+                </p>
+                <p>
+                    <label class="email-label" for="email">Адрес почты:</label>
+                    <input class="email" id="email" type="email" name="email" placeholder="Введите почту *">
+                </p>
+            </fieldset>
+        </div>
+        <div class="form__achievements">
+            <fieldset class="achievements__field">
+                <legen>ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legen>
+                <ul class="achievements-list">
+                    <li class="achievements-list-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox"
+                               name="shark" id="shark">
+                        <label for="shark">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="achievements-list-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox"
+                               name="beach" id="beach">
+                        <label for="beach">Обгорел на пляже</label>
+                    </li>
+                    <li class="achievements-list-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox"
+                               name="Norris" id="Norris">
+                        <label for="Norris">Видел Чака Норриса</label>
+                    </li>
+                    <li class="achievements-list-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox"
+                               name="souvenirs" id="souvenirs">
+                        <label for="souvenirs">Накупил сувениров</label>
+                    </li>
+                    <li class="achievements-list-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox"
+                               name="tower" id="tower">
+                        <label for="tower">Удержал башню</label>
+                    </li>
+                    <li class="achievements-list-option">
+                        <input class="filter-input filter-input-checkbox" type="checkbox"
+                               name="hotel" id="hotel">
+                        <label for="hotel">Разгромил отель</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="form__text">
+            <fieldset class="text__field">
+                <legend>ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+                <textarea class="user-letter" name="letter" placeholder="В свободной форме"></textarea>
+            </fieldset>
+        </div>
+    </form>
+    <button class="send-form button" type="submit">
+        Отправить форму
+    </button>
+    <p class="note">
+        * — ОБЯЗАТЕЛЬНЫЕ ДЛЯ ЗАПОЛНЕНИЯ ПОЛЯ
+    </p>
+</main>
 <footer class="page-footer">
     <img class="page-footer__logo-image" src="#" aria-label="Магазин <<Pink>>">
     <ul class="page-footer__list list-social">
